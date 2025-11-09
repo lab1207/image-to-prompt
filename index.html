@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to Prompt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Image to Prompt Generator</h1>
+  <form id="uploadForm">
+    <label for="imageInput">Upload image(s):</label>
+    <input type="file" id="imageInput" multiple accept="image/*" required><br><br>
+    <label for="targetSelect">Where will you use this?</label>
+    <select id="targetSelect" required>
+      <option value="elementor">WordPress + Elementor (HTML widget)</option>
+      <option value="gutenberg">WordPress Gutenberg (Custom HTML)</option>
+      <option value="raw">Raw HTML/CSS/JS</option>
+      <option value="react">React/Next.js</option>
+    </select><br><br>
+    <button type="submit">Generate</button>
+  </form>
+  <div id="output"></div>
+  <script src="app.js"></script>
+</body>
+</html>
