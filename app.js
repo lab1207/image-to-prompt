@@ -11,7 +11,7 @@ form.onsubmit = async function(e) {
   formData.append('target', target);
   try {
     // Use your (coming) Netlify Function URL below next!
-    const res = await fetch('YOUR_NETLIFY_FN_URL', {
+    const res = await fetch('https://rococo-pudding-90e3a0.netlify.app/.netlify/functions/analyze', {
       method: 'POST',
       body: formData
     });
