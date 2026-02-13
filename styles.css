@@ -6,3 +6,8 @@ textarea {
   width: 100%;
   font-size: 1em;
 }
+
+#submit {
+  background-color: brown;
+  color: black;
+}
